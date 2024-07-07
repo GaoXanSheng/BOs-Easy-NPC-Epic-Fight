@@ -37,14 +37,14 @@ side = "BOTH"
 [[dependencies.easy_npc_epic_fight]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.18.2,1.19)"
+versionRange = "[1.18.2,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.easy_npc_epic_fight]]
 modId = "easy_npc"
 mandatory = true
-versionRange = "[4.4.0,5.1.0)"
+versionRange = "[4.4.0,)"
 ordering = "NONE"
 side = "BOTH"
 
