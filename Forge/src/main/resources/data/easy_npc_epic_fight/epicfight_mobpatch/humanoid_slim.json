@@ -1,7 +1,7 @@
 {
   "model": "epicfight:entity/biped_slim_arm",
   "armature": "epicfight:entity/biped",
-  "renderer": "player",
+  "renderer": "minecraft:zombie",
   "isHumanoid": true,
   "faction": "villager",
   "attributes": {

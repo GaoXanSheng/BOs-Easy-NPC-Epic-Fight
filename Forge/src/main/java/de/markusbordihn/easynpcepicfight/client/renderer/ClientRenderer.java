@@ -70,7 +70,7 @@ public class ClientRenderer {
         context -> new SkeletonModelRenderer(context, CustomHumanoidArmorLayer.class));
     event.registerEntityRenderer(
         ModEntityType.ZOMBIE.get(),
-        context -> new ZombieModelRenderer(context, CustomHumanoidArmorLayer.class));
+        context -> new HumanoidModelRenderer(context, CustomHumanoidArmorLayer.class));
     event.registerEntityRenderer(
         ModEntityType.ZOMBIE_VILLAGER.get(),
         context -> new ZombieVillagerModelRenderer(context, CustomHumanoidArmorLayer.class));
