@@ -19,14 +19,7 @@
 
 package de.markusbordihn.easynpcepicfight.client.renderer;
 
-import de.markusbordihn.easynpc.client.renderer.entity.layers.CustomHumanoidArmorLayer;
-import de.markusbordihn.easynpc.client.renderer.entity.standard.HumanoidModelRenderer;
-import de.markusbordihn.easynpc.client.renderer.entity.standard.HumanoidSlimModelRenderer;
-import de.markusbordihn.easynpc.client.renderer.entity.standard.IllagerModelRenderer;
-import de.markusbordihn.easynpc.client.renderer.entity.standard.IronGolemModelRenderer;
-import de.markusbordihn.easynpc.client.renderer.entity.standard.SkeletonModelRenderer;
-import de.markusbordihn.easynpc.client.renderer.entity.standard.ZombieModelRenderer;
-import de.markusbordihn.easynpc.client.renderer.entity.standard.ZombieVillagerModelRenderer;
+import de.markusbordihn.easynpc.client.renderer.entity.standard.*;
 import de.markusbordihn.easynpcepicfight.Constants;
 import de.markusbordihn.easynpcepicfight.entity.ModEntityType;
 import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
@@ -44,6 +37,7 @@ public class ClientRenderer {
   private ClientRenderer() {}
 
   public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
+
     log.info("{} Entity Renders ...", Constants.LOG_REGISTER_PREFIX);
 
     event.registerEntityRenderer(ModEntityType.EVOKER.get(), IllagerModelRenderer::new);
