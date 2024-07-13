@@ -12,7 +12,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.level.Level;
 
-public class Zombie extends Humanoid {
+public class Zombie extends Humanoid  {
     public static final String ID = "zombie";
     public static final String ID_DROWNED = "drowned";
     public static final String ID_HUSK = "husk";
