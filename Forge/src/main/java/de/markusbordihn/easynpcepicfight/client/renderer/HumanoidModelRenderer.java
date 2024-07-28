@@ -6,10 +6,12 @@ import de.markusbordihn.easynpc.client.model.standard.StandardPlayerModel;
 import de.markusbordihn.easynpc.client.renderer.EasyNPCModelRenderer;
 import de.markusbordihn.easynpc.client.renderer.entity.base.BaseLivingEntityModelRenderer;
 import de.markusbordihn.easynpc.entity.easynpc.npc.Humanoid;
-import de.markusbordihn.easynpcepicfight.Constants;
+import de.markusbordihn.easynpcepicfight.client.renderer.entity.layers.DrownedOuterLayer;
 import de.markusbordihn.easynpcepicfight.entity.npc.SuperModels.Zombie;
 import net.minecraft.Util;
+import net.minecraft.client.model.DrownedModel;
 import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -20,7 +22,6 @@ import net.minecraft.client.renderer.entity.layers.RenderLayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Pose;
 
-import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,7 +32,7 @@ public class HumanoidModelRenderer extends BaseLivingEntityModelRenderer<Humanoi
         map.put(Humanoid.Variant.PROFESSOR_01, new ResourceLocation("easy_npc", "textures/entity/humanoid/professor_01.png"));
         map.put(Humanoid.Variant.SECURITY_01, new ResourceLocation("easy_npc", "textures/entity/humanoid/security_01.png"));
         map.put(Humanoid.Variant.KNIGHT_01, new ResourceLocation("easy_npc", "textures/entity/humanoid/knight_01.png"));
-        map.put(Zombie.Variant.DROWNED, new ResourceLocation(Constants.MOD_ID,"textures/entity/zombie/drowned.png"));
+        map.put(Zombie.Variant.DROWNED, new DrownedOuterLayer(new ResourceLocation("textures/entity/zombie/drowned.png"), new ResourceLocation("textures/entity/zombie/drowned_outer_layer.png")).getTexture());
         map.put(Zombie.Variant.HUSK, new ResourceLocation("textures/entity/zombie/husk.png"));
         map.put(Zombie.Variant.ZOMBIE, new ResourceLocation("textures/entity/zombie/zombie.png"));
     });
