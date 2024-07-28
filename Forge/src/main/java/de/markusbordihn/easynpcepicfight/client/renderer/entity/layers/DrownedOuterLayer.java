@@ -70,12 +70,11 @@ public class DrownedOuterLayer {
         }
     }
 
-    private BufferedImage combineImages(BufferedImage img1, BufferedImage img2) {
-        int width = Math.max(img1.getWidth(), img2.getWidth());
-        int height = Math.max(img1.getHeight(), img2.getHeight());
-        BufferedImage combinedImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
-        combinedImage.getGraphics().drawImage(img1, 0, 0, null);
-        combinedImage.getGraphics().drawImage(img2, 0, 0, null);
+    private BufferedImage combineImages(BufferedImage TEXTURE_BY_VARIANT, BufferedImage OUTER_TEXTURE_BY_VARIANT) {
+        BufferedImage combinedImage = new BufferedImage(64, 64, BufferedImage.TYPE_INT_ARGB);
+        combinedImage.getGraphics().drawImage(TEXTURE_BY_VARIANT, 0, 0, null);
+        combinedImage.getGraphics().drawImage(OUTER_TEXTURE_BY_VARIANT, 0, 0, null);
+        combinedImage.getGraphics().drawImage(OUTER_TEXTURE_BY_VARIANT, 32, 0, null);
         return combinedImage;
     }
 }
